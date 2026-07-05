@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Edit Student</h2>
+
+<form method="POST">
+
+<input
+class="form-control mb-3"
+name="name"
+value="{{ student.name }}"
+required>
+
+<input
+class="form-control mb-3"
+name="email"
+value="{{ student.email }}"
+required>
+
+<input
+class="form-control mb-3"
+name="course"
+value="{{ student.course }}"
+required>
+
+<button class="btn btn-primary">
+
+Update Student
+
+</button>
+
+<a href="/"
+class="btn btn-secondary">
+
+Back
+
+</a>
+
+</form>
+
+{% endblock %}
